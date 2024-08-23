@@ -4,94 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delícias Doces</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background: #cd8b54;
-            color: #fff;
-            text-align: center;
-        }
-
-        .button-container {
-            width: 100%;
-            max-width: 400px;
-            padding: 20px;
-            box-sizing: border-box;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            color: #cd8b54;
-        }
-
-        h1 {
-            margin: 0 0 20px 0;
-            font-size: 28px;
-            color: #cd8b54;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        button {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            font-size: 16px;
-            border: none;
-            color: #fff;
-            background-color: #cd8b54;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #b57947;
-            transform: translateY(-2px);
-        }
-
-        button:active {
-            background-color: #9b6439;
-            transform: translateY(0);
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 24px;
-            }
-
-            button {
-                font-size: 14px;
-                padding: 12px;
-            }
-        }
-        
-        @media (max-width: 320px) {
-            h1 {
-                font-size: 20px;
-            }
-
-            button {
-                font-size: 12px;
-                padding: 10px;
-            }
-        }
-    </style>
-    <script>
-        function copyPixKey() {
-            const pixKey = 'athos220206@gmail.com';
-            navigator.clipboard.writeText(pixKey).then(() => {
-                alert('Chave PIX copiada: ' + pixKey);
-            }).catch(err => {
-                alert('Erro ao copiar chave PIX: ' + err);
-            });
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="button-container">
@@ -100,5 +13,6 @@
         <button onclick="window.location.href='https://wa.me/55911992171265?text=Olá, tenho interesse nos brigadeiros.'">Fale no WhatsApp</button>
         <button onclick="copyPixKey()">Copiar Chave PIX</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
